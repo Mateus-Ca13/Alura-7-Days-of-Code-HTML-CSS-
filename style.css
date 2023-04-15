@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --cinza-principal: #667085;
+    --bordo-principal: #8E2424;
+    --cinza-secundário: #3A404E;
+    --preto: #101828;
+    --branco: #ffffff;
+    --vermelho-claro: #8E24240D;
+    --cinza-borda: #EAECF0;
+    --vermelho-colab: #C3191908;
+    --cinza-rodape: #F9FAFB;
+    --borda-rodape: #D0D5DD;
+    --cinza-copy: #98A2B3;
+
+    
+
+
+
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    background: var(--branco);
+}
+
+/* Seção Cabeçalho -----------------------------------------------*/
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    padding: 1em 4em;
+}
+
+.container_logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+ width: 27px;
+ color: var(--cinza-secundário);
+}
+
+.texto_logo {
+    font-size: 18px;
+    margin: 10px;
+    color: var(--cinza-secundário);
+}
+
+.container_navegacao {
+    display: flex;
+    margin: 0 4em;
+
+}
+
+.nav_link {
+    color: var(--cinza-principal);
+    text-decoration: none;
+    margin: 1em;
+}
+
+.container_botao {
+    display: flex;
+    margin-left: auto;
+}
+
+.cadastro_link {
+    padding: 1em;
+    border-radius: 10px;
+    background: var(--bordo-principal);
+    color: var(--branco);
+    margin: 0 0.5em;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+
+/* Seção Sobre nós -----------------------------------------------*/
+
+.secao-sobre_nos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4em 4em 10em 4em;
+    font-weight: 600;
+}
+
+.subtitulo-sobre_nos {
+    color: var(--bordo-principal);
+    
+}
+
+.titulo-sobre_nos {
+    font-size: 48px;
+    color: var(--preto);
+    margin: 0.5em 0 0.8em;
+}
+
+.texto-sobre_nos {
+    font-size: 20px;
+    color: var(--cinza-principal);
+    font-weight: 400;
+    width: 60%;
+    text-align: center;
+    margin: 0 0 5em;
+
+}
+
+.dados-sobre_nos {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 4em;
+    gap: 2em;
+}
+
+.card_dados {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.numero-card {
+    color: var(--bordo-principal);
+    font-size: 60px;
+}
+
+.titulo-card {
+    color: var(--preto);
+    font-size: 18px;
+    margin: 1.5em 0 0.5em 0;
+}
+
+.texto-card {
+    color: var(--cinza-principal);
+    font-weight: 400;
+}
+
+/* Seção de Vagas -----------------------------------------------*/
+
+.secao-introducao_vagas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitulo-introducao_vagas {
+    font-size: 14px;
+    background: var(--vermelho-claro);
+    color: var(--bordo-principal);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.titulo-introducao_vagas {
+    font-size: 36px;
+    color: var(--preto);
+    font-weight: 600;
+    margin: 1em;
+}
+
+.texto-introducao_vagas {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cinza-principal);
+    margin-bottom: 2em;
+}
+
+.img-introducao_vagas {
+    width: 85%;
+    height: 400px;
+    margin: 0 0 2em 0
+}
+
+.secao-vagas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.titulo-vagas {
+    font-size: 20px;
+    color: var(--preto);
+    width: calc(50% + 40px);
+    margin: 1.5em 0 ;
+}
+
+.card-vaga {
+    padding: 20px;
+    border: 1px solid var(--cinza-borda);
+    border-radius: 15px;
+    width: 50%;
+    margin: 0 0 1.5em;
+}
+
+.titulo-card {
+    font-size: 18px;
+    color: var(--preto);
+    margin: 0.2em 0 2em 0;
+}
+
+.descricao-card {
+    color: var(--cinza-principal);
+    display: inline-block;
+    margin: 0 1.5em 0 0;
+}
+
+/* Seção Colaboradores -----------------------------------------------*/
+
+.secao-colab {
+    background: var(--vermelho-colab);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em;
+    text-align: center;
+    margin: 3em 3em ;
+}
+
+.subtitulo-colab {
+    color: var(--bordo-principal);
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0 0 2em 0;
+}
+
+.titulo-colab {
+    color: var(--preto);
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.colab_img {
+    width: 56px;
+    margin: 2em 0 1em;
+}
+
+.nome_colab {
+    color: var(--preto);
+}
+
+.cargo_colab {
+    color: var(--cinza-principal);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 1em;
+}
+
+/* Seção Rodapé -----------------------------------------------*/
+
+.secao-rodape {
+    background-color: var(--cinza-rodape);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 4em 1em 4em;
+}
+
+.subtitulo-rodape {
+    color: var(--cinza-principal);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 1em 0 2em;
+}
+
+.titulo-rodape {
+    color: var(--preto);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.form_cadastro {
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    border: 1px solid var(--borda-rodape);
+    padding:  8px 12px;
+    border-radius: 8px;
+    width: 300px;
+    font-family: 'Inter', sans-serif;
+}
+
+.email::placeholder {
+    font-family: 'Inter', sans-serif;
+}
+
+.cadastro_submit {
+    margin: 0 10px;
+    background: var(--bordo-principal);
+    border: none;
+    color: var(--branco);
+    padding:  10px 20px;
+    border-radius: 8px;
+}
+
+.copyright {
+    color: var(--cinza-copy);
+    margin: 3em;
+}
